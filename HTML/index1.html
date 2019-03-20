@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Amazing Animal KIngdom</title>
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="../forms/forms.css">
+		<meta name="viewpoint" content="width=device-width", initiat-scale="1.0"/>
+	<script type="text/javascript">
+
+        function startClock()
+          {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('clock').innerHTML =
+            h + ":" + m + ":" + s;
+            var t = setTimeout(startClock, 500);
+          }
+          function checkTime(i) {
+            if (i < 10) {i ="0" + i}; return i;
+          }
+
+      </script>
+	</head>
+
+	<body onload="startClock()">
+
+		<div id="clock"></div>
+
+		<header>
+				<div class="login">
+		   		<a href="../forms/form1.html"><b>login</b></a>
+					<a href="../forms/form2.html"> <b>Sign up</b></a>
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="index1.html">Home</a></li>
+						<li>About</li>
+					</ul>
+				</div>
+		</header>
+			<br/>
+		<div class="container">
+				<h1>Amazing Animal Kingdom</h1>
+
+
+				<p>When you look around, you will observe different animals with different
+		structures and forms. As over a million species of animals have been
+		described till now, the need for classification becomes all the more
+		important. The classification also helps in assigning a systematic position
+		to newly described species.</p>
+
+					<ul id="art">
+						<li>Animal clans <a href="index2.html">Each clan has a name......</a></li>
+						<img src="panda.jpeg">
+						</br>
+						<li>Savaana Kingdom</li>
+						<img src="../images/lion.jpeg">
+						</br>
+						<li>Domestic Kingdom</li>
+						<img src="../images/dic.jpeg">
+					</ul>
+		</div>
+			<div id="footer">
+			<p>&copy; 2019 Amazing Animal Kingdom. All rights reserved.</p>
+			</div>
+	</body>
+</html>

@@ -1,0 +1,91 @@
+
+			html{background-image:url(../images/happychick.jpg);
+						background-size:cover;
+						padding-left:2.5%;
+						padding-right:5%;
+
+						}
+						/* check style for header and login */
+
+					header{
+						display: block;
+						height: 70px;
+						width: 1460px;
+						/*change backgroundcolor*/
+						background-color:white;
+						opacity: 0.4;
+						position:fixed;
+						top: o;
+						z-index:10;
+						}
+						.nav ul > li{list-style-type: none;
+									margin: 0;
+									padding: 0;
+									overflow: hidden;
+									text-decoration: none;
+									padding: 4px;
+									display: inline;
+									float: left;
+									width: 100px;
+									font-weight: bold;
+									font-size: 24px
+									}
+						.nav ul li>a{
+							text-decoration-line: none;
+						}
+
+	#clock{display:fixed;
+						color:red;
+						border:1px solid blue;
+						width:80px;
+						background-color:black;
+						height:24px}
+
+
+		.container{margin-top: 60px;
+								}
+
+		.login{background-color: rgba(255,255,255,0.3);
+						float: right;
+					transition: all 0.5s;
+			}
+
+		.login:hover{ background-color:  rgba(255,255,255,0.3)}
+
+		 .login a{line-height:55px;
+ 						padding: 0 10px;
+						color: red;
+						text-transition: 1s;
+						display: black;
+						text-decoration-line: none;
+			}
+
+			h1{font-family:verdana;
+					color:red;
+					text-align:center;
+					border:10px green solid;
+					margin-bottom:90px;
+					margin-top:20px
+					}
+			h2{font-size: 18px}
+			h3{font-size:18px}
+
+			p{font-size:18px; max-width: 600%}
+
+			image{position:fixed}
+
+		ul li:hover{color:red;text-transition:1s;
+ 				font-size: 20px}
+		ol li{color:blue}
+		#art ul li{
+				text-decoration-line:none;
+				list-style-type: none;
+		}
+		#art ul li a{ text-decoration: none;}
+		#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+			}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="index.css">
+		<script type="text/javascript">
+
+        function startClock()
+          {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('clock').innerHTML =
+            h + ":" + m + ":" + s;
+            var t = setTimeout(startClock, 500);
+          }
+          function checkTime(i) {
+            if (i < 10) {i ="0" + i}; return i;
+          }
+
+      </script>
+	</head>
+
+	<body onload="startClock()">
+		<div id="clock"></div>
+		<header>
+				<div class="login">
+		   		<a href="../forms/form1.html"><b>login/sign up</b></a>
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="index1.html">Home</a></li>
+						<li>About</li>
+					</ul>
+				</div>
+		</header>
+
+			<br/>
+		<div class="container">
+			<h1>Amazing Animal Kingdom</h1>
+				<h3>Animal Clans</h3>
+					<p>Each clan has a name, usually that of an animal about which the members have special feelings. In this Article you will discover the six main animal groups, ranging from the simplest (invertebrates) to the most complex (mammals).</p>
+					<ol>
+						<b>
+						 <li>Invertebrates</li>
+					  	<li>Fish</li>
+						 <li>Amphibians</li>
+						 <li>Repties</li>
+						 <li>Birds</li>
+						 <li>Mammals</li>
+						</b>
+					</ol>
+				<h2>Savaana Kingdom</h2>
+					<p></p>
+				<h3>Domestic Kingdom</h3>
+					<p></p>
+		</div>
+
+	</body>
+</html>
+
+
+	</body>
+</html>
