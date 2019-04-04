@@ -5,6 +5,7 @@
 		<title>Amazing Animal KIngdom</title>
 		<link rel="stylesheet" href="index.css">
 		<link rel="stylesheet" href="../forms/forms.css">
+
 		<meta name="viewpoint" content="width=device-width", initiat-scale="1.0"/>
 	<script type="text/javascript">
 
@@ -29,42 +30,116 @@
 
 	<body onload="startClock()">
 
-		<div id="clock"></div>
+			<div id="clock"></div>
 
-		<header>
-				<div class="login">
-		   		<a href="../forms/form1.html"><b>login</b></a>
-					<a href="../forms/form2.html"> <b>Sign up</b></a>
+			<header>
+					<div class="login">
+			   		<a href="../forms/form1.html"><b>login</b></a>
+						<a href="../forms/form2.html"> <b>Sign up</b></a>
+					</div>
+					<div class="nav">
+						<ul>
+							<li class="bar"><a href="index1.html">Home</a></li>
+							<li class="bar">About Us</li>
+							<li class="bar">Videos</li>
+							<li class="bar">Contact Us</li>
+						</ul>
+					</div>
+			</header>
+			<div class="sub-text">
+					<h1>Amazing Animal Kingdom</h1>
+			</div>
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<div class="numtext">1 / 3</div>
+					<img src="../images/1.jpeg" style="width:100%">
+					<div class="text"><b>Animal clans<br><a href="index2.html">
+						Each clan has a name......</a></b></div>
 				</div>
-				<div class="nav">
-					<ul>
-						<li><a href="index1.html">Home</a></li>
-						<li>About</li>
-					</ul>
+				<div class="mySlides fade">
+					<div class="numtext">2 / 3</div>
+					<img src="../images/asda.jpeg" style="width:100%">
+					<div class="text"><b>Savaana Kingdom</b></div>
 				</div>
-		</header>
-			<br/>
-		<div class="container">
-				<h1>Amazing Animal Kingdom</h1>
+				<div class="mySlides fade">
+					<div class="numtext">3 / 3</div>
+					<img src="../images/cds.jpeg" style="width:100%">
+					<div class="text"><b>Domestic Kingdom</b></div>
+				</div>
+			<!--
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				-->
+			</div>
+			<br>
+			<!--
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+			-->
+					<div class="container">
 
+					<p>When you look around, you will observe different animals with different
+			structures and forms. As over a million species of animals <br>have been
+			described till now,  the need for classification becomes all the more
+			important. The classification also helps in assigning<br> a systematic position
+			to newly described species.</p>
+			</div>
+			<script>
+		/*
+			var slideshow = 1;
+			showSlides(slideIndex);
 
-				<p>When you look around, you will observe different animals with different
-		structures and forms. As over a million species of animals have been
-		described till now, the need for classification becomes all the more
-		important. The classification also helps in assigning a systematic position
-		to newly described species.</p>
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+			function showSlides(n) {
+			    var i;
+			    var slides =
+			  document.getElementsByClassName('mySlides');
+			    var dots =
+			  document.getElementsByClassName('dots');
+			    if (n > slides.length){
+			      slideIndex = 1}
 
-					<ul id="art">
-						<li>Animal clans <a href="index2.html">Each clan has a name......</a></li>
-						<img src="panda.jpeg">
-						</br>
-						<li>Savaana Kingdom</li>
-						<img src="../images/lion.jpeg">
-						</br>
-						<li>Domestic Kingdom</li>
-						<img src="../images/dic.jpeg">
-					</ul>
-		</div>
+			    if (n < 1){slideIndex = slides.length}
+
+			    for (var i = 0; i < slides.length; i++) {
+			      slides[i].style.display = "none";
+			    }
+			    for (var i = 0; i < dots.length; i++) {
+			      dots[i].className.replace(" active", "");
+			    }
+			    slides[slideIndex-1].style.display ="block";
+			    dots[slideIndex-1].className +=" active";
+
+			}
+			*/
+
+			var slideIndex = 0;
+			showSlides();
+			function showSlides() {
+					var i;
+					var slides =
+				document.getElementsByClassName('mySlides');
+				for (var i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+					if (slideIndex > slides.length){
+						slideIndex = 1}
+						slides[slideIndex-1].style.display = "block";
+						setTimeout(showSlides, 5000);
+			}
+
+			</script>
+			<br>
+
 			<div id="footer">
 			<p>&copy; 2019 Amazing Animal Kingdom. All rights reserved.</p>
 			</div>

@@ -1,3 +1,19 @@
+.login{
+	float: right;
+	padding-right:15px;
+  font-size: 18px
+}
+
+.login a{line-height:55px;
+	padding: 0 15px;
+	margin: 5px 3px;
+	color: red;
+	text-decoration-line: none;
+}
+h1{
+  text-align: center;
+  margin-top: 50px
+}
 #loginbox{
   width: 450px;
   height: 520px;
